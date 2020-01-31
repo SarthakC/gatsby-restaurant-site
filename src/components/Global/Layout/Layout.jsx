@@ -1,12 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-
-import "./Layout.css"
+import { GlobalStyle } from "./Layout.styles"
+import Navbar from "../Navbar/Navbar/Navbar"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <main>{children}</main>
+      <GlobalStyle />
+      <Navbar />
+      {children}
     </>
   )
 }
