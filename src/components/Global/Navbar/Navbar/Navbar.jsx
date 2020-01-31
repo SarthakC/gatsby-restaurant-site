@@ -7,11 +7,11 @@ import NavbarIcons from "../NavbarIcons/NavbarIcons"
 import { NavbarWrapper } from "./Navbar.styles"
 
 const Navbar = () => {
-  const [state, setstate] = useState({
+  const [state, setState] = useState({
     navbarOpen: false,
   })
   const handleNavbar = () => {
-    setstate({ ...state, navbarOpen: !navbarOpen })
+    setState({ ...state, navbarOpen: !navbarOpen })
   }
 
   const { navbarOpen } = state
