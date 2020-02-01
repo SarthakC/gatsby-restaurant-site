@@ -1,11 +1,11 @@
 import React from "react"
 
-import { Header, Layout, SEO } from "../components/Global"
+import { HomeHeader, Layout, SEO } from "../components/Global"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Header>Hello from header</Header>
+    <HomeHeader>Hello from header</HomeHeader>
   </Layout>
 )
 

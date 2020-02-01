@@ -8,3 +8,6 @@ export const IndexHeader = styled.header`
   justify-content: center;
   align-items: center;
 `
+export const DefaultHeader = styled(IndexHeader)`
+  min-height: 60vh;
+`

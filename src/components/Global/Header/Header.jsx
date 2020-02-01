@@ -1,15 +1,19 @@
 import React from "react"
 
-import { IndexHeader } from "./Header.styles"
+import { IndexHeader, DefaultHeader } from "./Header.styles"
 
 import img from "../../../images/bcg/homeBcg.jpeg"
 
-const Header = ({ img, children }) => {
+const HomeHeader = ({ img, children }) => {
   return <IndexHeader img={img}>{children}</IndexHeader>
 }
 
-Header.defaultProps = {
+const PageHeader = ({ img, children }) => {
+  return <DefaultHeader img={img}>{children}</DefaultHeader>
+}
+
+HomeHeader.defaultProps = {
   img,
 }
 
-export default Header
+export { HomeHeader, PageHeader }

@@ -3,11 +3,16 @@ import React from "react"
 
 import Layout from "../components/Global/Layout/Layout"
 import SEO from "../components/Global/SEO/SEO"
+import { PageHeader } from "../components/Global"
+
+import contactImg from "../images/bcg/contactBcg.jpeg"
 
 const MenuPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3>Hello</h3>
+    <PageHeader img={contactImg}>
+      <h3>Hello</h3>
+    </PageHeader>
   </Layout>
 )
 
