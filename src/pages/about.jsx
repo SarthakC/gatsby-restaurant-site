@@ -3,7 +3,7 @@ import React from "react"
 
 import Layout from "../components/Global/Layout/Layout"
 import SEO from "../components/Global/SEO/SEO"
-import { PageHeader } from "../components/Global"
+import { PageHeader, Banner } from "../components/Global"
 
 import aboutImg from "../images/bcg/aboutBcg.jpeg"
 
@@ -11,7 +11,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="Home" />
     <PageHeader img={aboutImg}>
-      <h3>Hello</h3>
+      <Banner title="about us" subtitle="a little about us" />
     </PageHeader>
   </Layout>
 )

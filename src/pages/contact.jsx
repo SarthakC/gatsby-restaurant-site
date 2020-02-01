@@ -3,7 +3,7 @@ import React from "react"
 
 import Layout from "../components/Global/Layout/Layout"
 import SEO from "../components/Global/SEO/SEO"
-import { PageHeader } from "../components/Global"
+import { PageHeader, Banner } from "../components/Global"
 
 import contactImg from "../images/bcg/contactBcg.jpeg"
 
@@ -11,7 +11,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Home" />
     <PageHeader img={contactImg}>
-      <h3>Hello</h3>
+      <Banner title="contact us" subtitle="lets get in touch" />
     </PageHeader>
   </Layout>
 )
