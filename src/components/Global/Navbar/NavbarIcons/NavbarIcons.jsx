@@ -33,7 +33,7 @@ const NavbarIcons = () => {
     <IconWrapper>
       {icons.map(({ path, icon, id }) => {
         return (
-          <a href={path} key={id} target="_blank">
+          <a href={path} key={id} target="_blank" rel="noopener noreferrer">
             {icon}
           </a>
         )

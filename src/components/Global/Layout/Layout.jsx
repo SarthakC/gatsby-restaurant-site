@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { GlobalStyle } from "./Layout.styles"
-import Navbar from "../Navbar/Navbar/Navbar"
+import { Navbar } from ".."
 
 const Layout = ({ children }) => {
   return (
