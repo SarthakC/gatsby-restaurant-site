@@ -1,7 +1,15 @@
 import React from "react"
 
-const Header = () => {
-  return <div>Header</div>
+import { IndexHeader } from "./Header.styles"
+
+import img from "../../../images/bcg/homeBcg.jpeg"
+
+const Header = ({ img, children }) => {
+  return <IndexHeader img={img}>{children}</IndexHeader>
+}
+
+Header.defaultProps = {
+  img,
 }
 
 export default Header
