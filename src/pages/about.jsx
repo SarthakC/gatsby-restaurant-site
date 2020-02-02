@@ -1,9 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
 
-import { Layout } from "../components/Layout"
-import SEO from "../components/Global/SEO/SEO"
-import { PageHeader, Banner } from "../components/Global"
+import { Layout, SEO, PageHeader, Banner } from "../components/Global"
 
 import aboutImg from "../images/bcg/aboutBcg.jpeg"
 

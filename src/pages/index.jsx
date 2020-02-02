@@ -1,8 +1,13 @@
 import React from "react"
 
-import { HomeHeader, SEO, Banner, BannerButton } from "../components/Global"
+import {
+  HomeHeader,
+  SEO,
+  Banner,
+  BannerButton,
+  Layout,
+} from "../components/Global"
 import QuickInfo from "../components/HomePageComponents/QuickInfo/QuickInfo"
-import { Layout } from "../components/Layout"
 
 const IndexPage = () => (
   <Layout>
