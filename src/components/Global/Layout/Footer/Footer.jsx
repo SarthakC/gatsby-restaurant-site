@@ -1,23 +1,25 @@
 import React, { useState } from "react"
 
-import { FacebookIcon, TwitterIcon, InstagramIcon } from "./Footer.styles"
+import { FooterWrapper, FooterTitle, IconWrapper } from "./Footer.styles"
+
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
   const [state] = useState({
     icons: [
       {
         id: 1,
-        icon: <FacebookIcon />,
+        icon: <FaFacebook />,
         path: "https://www.facebook.com/",
       },
       {
         id: 2,
-        icon: <TwitterIcon />,
+        icon: <FaTwitter />,
         path: "https://www.twitter.com/",
       },
       {
         id: 3,
-        icon: <InstagramIcon />,
+        icon: <FaInstagram />,
         path: "https://www.instagram.com/",
       },
     ],
@@ -25,7 +27,19 @@ const Footer = () => {
 
   const { icons } = state
 
-  return <footer>footer content</footer>
+  return (
+    <FooterWrapper>
+      <FooterTitle>eatery</FooterTitle>
+      <IconWrapper>
+        {icons.map(({ path, id, icon }) => (
+          <a href={path} key={id}>
+            {icon}
+          </a>
+        ))}
+      </IconWrapper>
+      <p>copyright &copy; {new Date().getFullYear()}</p>
+    </FooterWrapper>
+  )
 }
 
 export default Footer
