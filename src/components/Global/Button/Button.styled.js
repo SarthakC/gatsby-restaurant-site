@@ -29,6 +29,7 @@ const BannerButton = styled.button`
 
 const SectionButton = styled(BannerButton)`
   color: ${mainBlack};
+  margin: 2rem auto;
   ${border({ color: `${mainBlack}` })};
   &:hover {
     background: ${mainBlack};
