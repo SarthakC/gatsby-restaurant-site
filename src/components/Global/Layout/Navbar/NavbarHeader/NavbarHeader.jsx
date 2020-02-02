@@ -2,7 +2,7 @@ import React from "react"
 
 import { HeaderWrapper, FaAlignRightWrapper } from "./NavbarHeader.styles"
 import { Link } from "gatsby"
-import logo from "../../../../images/logo.svg"
+import logo from "../../../../../images/logo.svg"
 
 const NavbarHeader = ({ handleNavbar }) => {
   return (
