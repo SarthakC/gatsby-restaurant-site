@@ -7,7 +7,7 @@ import {
   BannerButton,
   Layout,
 } from "../components/Global"
-import QuickInfo from "../components/HomePageComponents/QuickInfo/QuickInfo"
+import { QuickInfo, Gallery } from "../components/HomePageComponents"
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +18,7 @@ const IndexPage = () => (
       </Banner>
     </HomeHeader>
     <QuickInfo />
+    <Gallery />
   </Layout>
 )
 
