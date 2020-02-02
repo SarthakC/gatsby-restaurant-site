@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { styles } from "../../../../utils"
+
 import { FaAlignRight } from "react-icons/fa"
+import { styles } from "../../../../../utils"
 
 export const HeaderWrapper = styled.div`
   padding: 0.4rem 1rem;

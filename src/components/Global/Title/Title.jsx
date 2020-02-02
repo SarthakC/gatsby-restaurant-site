@@ -1,5 +1,5 @@
 import React from "react"
-import { Underline, TitleWrapper } from "./Title.styles"
+import { TitleWrapper } from "./Title.styles"
 
 const Title = ({ title, message }) => {
   return (

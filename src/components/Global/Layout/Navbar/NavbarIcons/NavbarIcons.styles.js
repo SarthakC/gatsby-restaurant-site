@@ -1,7 +1,10 @@
 import styled from "styled-components"
-import { colors, transFunction } from "../../../../utils/styles"
 
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
+
+import { styles } from "../../../../../utils"
+
+const { colors, transFunction } = styles
 
 export const IconWrapper = styled.div`
   display: none;

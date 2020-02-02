@@ -1,7 +1,8 @@
-import { styles } from "../../../../utils"
 import styled from "styled-components"
 
 import { Link } from "gatsby"
+
+import { styles } from "../../../../../utils"
 
 const {
   transDefault,
