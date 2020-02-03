@@ -7,18 +7,24 @@ import {
   BannerButton,
   Layout,
 } from "../components/Global"
-import { QuickInfo, Gallery } from "../components/HomePageComponents"
+import { QuickInfo, Gallery, Menu } from "../components/HomePageComponents"
+import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HomeHeader>
       <Banner title="eatery" subtitle="anjuna beach, goa">
-        <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
+        <Link to="/menu" style={{ textDecoration: "none" }}>
+          <BannerButton style={{ margin: "2rem auto" }} to="/menu">
+            Menu
+          </BannerButton>
+        </Link>
       </Banner>
     </HomeHeader>
     <QuickInfo />
     <Gallery />
+    <Menu />
   </Layout>
 )
 

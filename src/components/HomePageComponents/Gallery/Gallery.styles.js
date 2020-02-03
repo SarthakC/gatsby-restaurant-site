@@ -18,7 +18,7 @@ export const GalleryWrapper = styled.div`
   }
 
   @media (min-width: 576px) {
-    grid-template-columns: (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem;
   }
   @media (min-width: 768px) {
